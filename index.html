@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cách tính TDEE
+    </title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="all"/>
+  </head>
+  <body> 
+    <div id="wrapper">
+      <div id="ftwp-container-outer" class="ftwp-in-post ftwp-float-none">
+      </div>
+      <div id="ftwp-postcontent">
+        <div class="calcalpro_wrapper calorie_calculator_general">
+          <div class="calcalpro_body_wrapper">
+            <div id="tabs-2_2032022665" class="calcal_tab">
+              <div class="calorie_calculator_metric_show_errors">
+              </div>
+              <form action="" method="post" class="calorie_calculator_form_metric_units calorie_calculator_form" name="calorie_calculator_form_metric_units">
+                <input type="hidden" name="unit" value="metric_unit">
+                <input type="hidden" name="template" value="general">
+                <div class="full_width calcalpro_tooltip"> 
+                  <span class="calcalpro_tooltiptext">Điền Tuổi Của Bạn
+                  </span>  
+                  <input type="number" min="15" max="80" step="any" name="calorie_calculator_age" id="calorie_calculator_age" class="calorie_calculator_age" placeholder="Độ Tuổi" value="">
+                </div>
+                <div class="full_width"> 
+                  <div class="gender_field_wrapper full_width calcalpro_tooltip"> 
+                    <span class="calcalpro_tooltiptext">Chọn giới tính
+                    </span> 
+                    <input type="radio" name="calorie_calculator_gender" value="male" id="calorie_calculator_gender_male_1083034209" class="calorie_calculator_male" checked> 
+                    <label for="calorie_calculator_gender_male_1083034209">Nam
+                    </label> 
+                    <input type="radio" name="calorie_calculator_gender" value="female" id="calorie_calculator_gender_female_1083034209" class="calorie_calculator_female"> 
+                    <label for="calorie_calculator_gender_female_1083034209">Nữ
+                    </label>
+                  </div>
+                </div>
+                <div class="full_width calcalpro_tooltip"> 
+                  <span class="calcalpro_tooltiptext">Điền chiều cao của bạn
+                  </span>  
+                  <input type="number" min="0" step="any" name="calorie_calculator_height" class="calorie_calculator_height" placeholder="Chiều Cao (Centimet)">
+                </div>
+                <div class="full_width calcalpro_tooltip"> 
+                  <span class="calcalpro_tooltiptext">Điền cân nặng của bạn
+                  </span>  
+                  <input type="number" min="0" step="any" name="calorie_calculator_weight" id="calorie_calculator_weight" class="calorie_calculator_weight" placeholder=" Cân Nặng (Kg)">
+                </div>
+                <div class="full_width calcalpro_tooltip"> 
+                  <span class="calcalpro_tooltiptext">Chọn mức hoạt động trong ngày
+                  </span>  
+                  <select id="calorie_calculator_activity" name="calorie_calculator_activity" class="calcalpro-custom-select calorie_calculator_activity" placeholder=" Mức độ hoạt động trong ngày"> 
+                    <option value="1">Chỉ tính BMR
+                    </option> 
+                    <option value="1.2"> Ít vận động - ít hoặc không tập thể dục
+                    </option> 
+                    <option value="1.375" selected>Vận động nhẹ - Tập thể dục từ 1-3 lần một tuần
+                    </option> 
+                    <option value="1.55">Vận động vừa phải - Có tập thể dục từ 3-5 lần một tuần
+                    </option> 
+                    <option value="1.725"> Rất năng động - Tập thể dục chăm chỉ từ 6-7 lần một tuần
+                    </option> 
+                    <option value="1.9">Vận động nặng - Tập thể dục hoặc làm việc nặng 
+                    </option> 
+                  </select>
+                </div>
+                <div class="full_width calcalpro_tooltip"> 
+                  <span class="calcalpro_tooltiptext">Tỷ lệ phần trăm mỡ cơ thể của bạn (tùy chọn)
+                  </span>  
+                  <input type="number" min="0" step="any" name="body_fat" id="body_fat" class="body_fat" placeholder="% Mỡ trong cơ thể" value="">
+                </div>
+                <div class="full_width">
+                  <div class="width_half calcalpro_tooltip"> 
+                    <span class="calcalpro_tooltiptext">Điền Tên Đầy Đủ
+                    </span>  
+                    <input type="text" name="first_name" value="" placeholder="Tên đầy đủ" id="first_name" class="first_name">
+                  </div>
+                  <div class="width_half calcalpro_tooltip"> 
+                    <span class="calcalpro_tooltiptext">Nhập Số Điện Thoại để được ưu tiên giải đáp
+                    </span>  
+                    <input type="text" name="last_name" value="" placeholder="Số Điện Thoại" id="last_name" class="last_name">
+                  </div>
+                </div>
+                <div class="full_width calcalpro_tooltip"> 
+                  <span class="calcalpro_tooltiptext">Điền chính xác Email
+                  </span>  
+                  <input type="email" name="user_email" value="" placeholder="Điền Email (Hàng tháng sẽ có Tip hay miễn phí gửi về)" id="user_email" class="user_email">
+                </div>
+                <input type="hidden" id="calorie_calculator_form_nonce_field_action" name="calorie_calculator_form_nonce_field_action" value="d545a458e9" />
+                <input type="hidden" name="_wp_http_referer" value="/cach-tinh-tdee/" />
+                <div class="full_width"> 
+                  <input type="submit" class="btn btn-block btn-default calcalpro_submit" value="Bắt Đầu Tính"> 
+                  <input class="clear_form" type="button" value="Làm Lại">
+                </div>
+              </form>
+            </div>
+            <div class="calorie_calculator_result" style="display: none;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>var wouVars={"wouAjaxUrl":"https:\/\/ntplogs.blogspot.com","wouCurrentOnlineUsers":["fhciaarg@tznvy.pbz"],"wouCurrentUserEmail":"","wouCurrentUserName":"","wouCookieHash":"a1becdf053000381e916877b1d03e689","wouCheckFrequency":"60000","wouPhraseStatusOnline":"Online","wouPhraseStatusOffline":"Offline","wouIsShowNotificationPopup":"1","wouNotificationPopupTimeout":"10"};</script>
+    <script>var ajax_send_or_download_details={"ajaxurl":"https:\/\/ntplogs.blogspot.com"};
+var translation_array={"sending_email":"Sending Email...","send_me_an_email":"Send me an Email!","sorry_email_cannot_be_sent":"\nL\u1ea5y l\u00e0m ti\u1ebfc! Email kh\u00f4ng th\u1ec3 \u0111\u01b0\u1ee3c g\u1eedi ngay b\u00e2y gi\u1edd!","downloading":"Downloading...","processing_download":"Processing download...","download_as_pdf":"Download as PDF","something_went_wrong":"\nL\u1ea5y l\u00e0m ti\u1ebfc! \u0110\u00e3 x\u1ea3y ra l\u1ed7i.","please_fill_up_all_fields":"Please Fill up all of the fields!","bmr":"BMR","calories_per_day":"Calories\/day","you_need":"B\u1ea1n C\u1ea7n","calories_to_maintain_weight":"L\u01b0\u1ee3ng Calo \u0103n trong 1 ng\u00e0y \u0111\u1ec3 duy tr\u00ec c\u00e2n n\u1eb7ng","calories_per_day_to_loose_1lb_per_week":"Calories\/day to lose 1 lb per week.","calories_per_day_to_loose_2lb_per_week":"Calories\/day to lose 2 lb per week.","calories_per_day_to_gain_1lb_per_week":"Calories\/day to gain 1 lb per week.","calories_per_day_to_gain_2lb_per_week":"Calories\/day to gain 2 lb per week.","calories_per_day_to_loose_point_5kg_per_week":"L\u01b0\u1ee3ng calo \u0103n trong 1 ng\u00e0y \u0111\u1ec3 Gi\u1ea3m 0.5 Kilogam m\u1ed7i tu\u1ea7n","calories_per_day_to_loose_1kg_per_week":"L\u01b0\u1ee3ng calo \u0103n trong 1 ng\u00e0y \u0111\u1ec3 Gi\u1ea3m 1 Kilogam m\u1ed7i tu\u1ea7n","calories_per_day_to_gain_point_5kg_per_week":"L\u01b0\u1ee3ng calo \u0103n trong 1 ng\u00e0y \u0111\u1ec3 t\u0103ng 0.5 Kilogam m\u1ed7i tu\u1ea7n","calories_per_day_to_gain_1kg_per_week":"L\u01b0\u1ee3ng calo \u0103n trong 1 ng\u00e0y \u0111\u1ec3 t\u0103ng 1 Kilogam m\u1ed7i tu\u1ea7n","no_foods_to_show":"No foods to show","show":"Show","search_food":"T\u00ecm Ki\u1ebfm","no_exercises_to_show":"No exercises to show","search_exercise":"T\u00ecm Ki\u1ebfm","ten_foods":"Hi\u1ec3n Th\u1ecb Th\u00eam","twenty_foods":"Hi\u1ec3n th\u1ecb 20","thirty_foods":"Hi\u1ec3n th\u1ecb 30","forty_foods":"Hi\u1ec3n th\u1ecb 40","fifty_foods":"Hi\u1ec3n th\u1ecb 50","eighty_foods":"Hi\u1ec3n th\u1ecb 80","all_foods":"Hi\u1ec3n th\u1ecb t\u1ea5t c\u1ea3","ten_exercises":"Hi\u1ec3n Th\u1ecb Th\u00eam","twenty_exercises":"20 M\u00f4n","thirty_exercises":"30 M\u00f4n","forty_exercises":"40 M\u00f4n","fifty_exercises":"50 M\u00f4n","eighty_exercises":"80 M\u00f4n","all_exercises":"T\u1ea5t C\u1ea3"};
+var calcalpro_settings={"debug_mode":"","save_data_to_localstorage":"false"};
+var ajax_send_or_download_details={"ajaxurl":"https:\/\/htmledit.squarefree.com"};
+var translation_array={"sending_email":"Sending Email...","send_me_an_email":"Send me an Email!","sorry_email_cannot_be_sent":"\nL\u1ea5y l\u00e0m ti\u1ebfc! Email kh\u00f4ng th\u1ec3 \u0111\u01b0\u1ee3c g\u1eedi ngay b\u00e2y gi\u1edd!","downloading":"Downloading...","processing_download":"Processing download...","download_as_pdf":"Download as PDF","something_went_wrong":"\nL\u1ea5y l\u00e0m ti\u1ebfc! \u0110\u00e3 x\u1ea3y ra l\u1ed7i.","please_fill_up_all_fields":"Please Fill up all of the fields!","bmr":"BMR","calories_per_day":"Calories\/day","you_need":"B\u1ea1n C\u1ea7n","calories_to_maintain_weight":"L\u01b0\u1ee3ng Calo \u0103n trong 1 ng\u00e0y \u0111\u1ec3 duy tr\u00ec c\u00e2n n\u1eb7ng","calories_per_day_to_loose_1lb_per_week":"Calories\/day to lose 1 lb per week.","calories_per_day_to_loose_2lb_per_week":"Calories\/day to lose 2 lb per week.","calories_per_day_to_gain_1lb_per_week":"Calories\/day to gain 1 lb per week.","calories_per_day_to_gain_2lb_per_week":"Calories\/day to gain 2 lb per week.","calories_per_day_to_loose_point_5kg_per_week":"L\u01b0\u1ee3ng calo \u0103n trong 1 ng\u00e0y \u0111\u1ec3 Gi\u1ea3m 0.5 Kilogam m\u1ed7i tu\u1ea7n","calories_per_day_to_loose_1kg_per_week":"L\u01b0\u1ee3ng calo \u0103n trong 1 ng\u00e0y \u0111\u1ec3 Gi\u1ea3m 1 Kilogam m\u1ed7i tu\u1ea7n","calories_per_day_to_gain_point_5kg_per_week":"L\u01b0\u1ee3ng calo \u0103n trong 1 ng\u00e0y \u0111\u1ec3 t\u0103ng 0.5 Kilogam m\u1ed7i tu\u1ea7n","calories_per_day_to_gain_1kg_per_week":"L\u01b0\u1ee3ng calo \u0103n trong 1 ng\u00e0y \u0111\u1ec3 t\u0103ng 1 Kilogam m\u1ed7i tu\u1ea7n","no_foods_to_show":"No foods to show","show":"Show","search_food":"T\u00ecm Ki\u1ebfm","no_exercises_to_show":"No exercises to show","search_exercise":"T\u00ecm Ki\u1ebfm","ten_foods":"Hi\u1ec3n Th\u1ecb Th\u00eam","twenty_foods":"Hi\u1ec3n th\u1ecb 20","thirty_foods":"Hi\u1ec3n th\u1ecb 30","forty_foods":"Hi\u1ec3n th\u1ecb 40","fifty_foods":"Hi\u1ec3n th\u1ecb 50","eighty_foods":"Hi\u1ec3n th\u1ecb 80","all_foods":"Hi\u1ec3n th\u1ecb t\u1ea5t c\u1ea3","ten_exercises":"Hi\u1ec3n Th\u1ecb Th\u00eam","twenty_exercises":"20 M\u00f4n","thirty_exercises":"30 M\u00f4n","forty_exercises":"40 M\u00f4n","fifty_exercises":"50 M\u00f4n","eighty_exercises":"80 M\u00f4n","all_exercises":"T\u1ea5t C\u1ea3"};
+var calcalpro_settings={"debug_mode":"","save_data_to_localstorage":"false"};</script>
+    <script src='./js/jQuery.min.js'>
+    </script>
+    <script src='./js/jQuery.custom.js'>
+    </script>
+  </body>
+</html> 
