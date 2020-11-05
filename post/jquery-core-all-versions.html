@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>jQuery Core - All Versions</title>
 <style>
-body{margin:0 auto;min-width:250px;max-width: 899px;background: #ddd;border: 1px solid #fff;padding: 0 15px 0 0}*{box-sizing:border-box}ol li{cursor:pointer;position:relative;padding:12px 8px 12px 40px;background:#eee;font-size:18px;transition:0.2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}ol li:nth-child(odd){background:#f9f9f9}ol li:hover{background:#ddd}ol li.checked{background:#888;color:#fff;text-decoration:line-through}ol li.checked::before{content:'';position:absolute;border-color:#fff;border-style:solid;border-width:0 2px 2px 0;top:10px;left:16px;transform:rotate(45deg);height:15px;width:7px}.close{position:absolute;right:0;top:0;padding:12px 16px 12px 16px}.close:hover{background-color:#f44336;color:white}.header{background-color:#f38879;padding:30px 40px;color:black;text-align:center}.header:after{content:"";display:table;clear:both}input{margin:0;border:none;border-radius:0;width:75%;padding:10px;float:left;font-size:16px}.addBtn{padding:10px;width:25%;background:#d9d9d9;color:#555;float:left;text-align:center;font-size:16px;cursor:pointer;transition:0.3s;border-radius:0}.addBtn:hover{background-color:#bbb}
+    body{margin:5% auto;min-width:250px;max-width: 899px;background: #fff;box-shadow: 0px 5px 35px #aaa;}.my_content{padding: 5px 15px 15px 0;margin: 0;background: #fff}*{box-sizing:border-box}ol li{cursor:pointer;position:relative;padding:12px 8px 12px 40px;background:#eee;font-size:18px;transition:0.2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}ol li:nth-child(odd){background:#f9f9f9}ol li:hover{background:#ddd}ol li.checked{background:#888;color:#fff;text-decoration:line-through}ol li.checked::before{content:'';position:absolute;border-color:#fff;border-style:solid;border-width:0 2px 2px 0;top:10px;left:16px;transform:rotate(45deg);height:15px;width:7px}.close{position:absolute;right:0;top:0;padding:12px 16px 12px 16px}.close:hover{background-color:#f44336;color:white}.header{background-color:#f38879;padding:30px 40px;color:black;text-align:center}.header:after{content:"";display:table;clear:both}input{margin:0;border:none;border-radius:0;width:75%;padding:10px;float:left;font-size:16px}.addBtn{padding:10px;width:25%;background:#d9d9d9;color:#555;float:left;text-align:center;font-size:16px;cursor:pointer;transition:0.3s;border-radius:0}.addBtn:hover{background-color:#bbb}a:link{color:#f38879;text-decoration:none}a:visited{color:blue}a:hover{color:blue}a:active{color:blue}
 </style>
 </head>
 <body>
@@ -15,6 +15,7 @@ body{margin:0 auto;min-width:250px;max-width: 899px;background: #ddd;border: 1px
   <input type="text" id="myInput" placeholder="Title...">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
+    <div class="my_content">
 <ol id="myol">
 <p>UNSTABLE, NOT FOR PRODUCTION</p>
 	<li>
@@ -145,7 +146,7 @@ body{margin:0 auto;min-width:250px;max-width: 899px;background: #ddd;border: 1px
 	<li>jQuery Migrate 1.1.0 - <a class='open-sri-modal' href='https://code.jquery.com/jquery-migrate-1.1.0.js' data-hash='sha256-ifbhJ2/447hf+q3OF+4eohceL4+UVMIkeT2SkKtXBg8='>uncompressed</a>, <a class='open-sri-modal' href='https://code.jquery.com/jquery-migrate-1.1.0.min.js' data-hash='sha256-eMBZvJbSLzRzQjY/v1PP6f/C/0nJ0E+dvnYMh/J2xc4='>minified</a></li>
 	<li>jQuery Migrate 1.0.0 - <a class='open-sri-modal' href='https://code.jquery.com/jquery-migrate-1.0.0.js' data-hash='sha256-2bY1JI79S1lsrUAlecKaYZtDec+1U6MliTULBMB/K/o='>uncompressed</a>, <a class='open-sri-modal' href='https://code.jquery.com/jquery-migrate-1.0.0.min.js' data-hash='sha256-vFw/1vNau3674UPkfFXXJrXdw8EnyAAhI8FcDK5+4SI='>minified</a></li>
 </ol>
-
+</div>
 <script>
 var myNodelist=document.getElementsByTagName("LI");var i;for(i=0;i<myNodelist.length;i++){var span=document.createElement("SPAN");var txt=document.createTextNode("\u00D7");span.className="close";span.appendChild(txt);myNodelist[i].appendChild(span)}var close=document.getElementsByClassName("close");var i;for(i=0;i<close.length;i++){close[i].onclick=function(){var a=this.parentElement;a.style.display="none"}}var list=document.querySelector("ol");list.addEventListener("click",function(a){if(a.target.tagName==="LI"){a.target.classList.toggle("checked")}},false);function newElement(){var c=document.createElement("li");var b=document.getElementById("myInput").value;var d=document.createTextNode(b);c.appendChild(d);if(b===""){alert("You must write something!")}else{document.getElementById("myol").appendChild(c)}document.getElementById("myInput").value="";var e=document.createElement("SPAN");var a=document.createTextNode("\u00D7");e.className="close";e.appendChild(a);c.appendChild(e);for(i=0;i<close.length;i++){close[i].onclick=function(){var f=this.parentElement;f.style.display="none"}}};
 </script>
