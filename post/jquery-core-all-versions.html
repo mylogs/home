@@ -5,8 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>jQuery Core - All Versions</title>
 <style>
-    body{margin:5% auto;min-width:250px;max-width: 899px;background: #fff;box-shadow: 0px 5px 35px #aaa;}.my_content{padding: 5px 15px 15px 0;margin: 0;background: #fff}*{box-sizing:border-box}ol li{cursor:pointer;position:relative;padding:12px 8px 12px 40px;background:#eee;font-size:18px;transition:0.2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}ol li:nth-child(odd){background:#f9f9f9}ol li:hover{background:#ddd}ol li.checked{background:#888;color:#fff;text-decoration:line-through}ol li.checked::before{content:'';position:absolute;border-color:#fff;border-style:solid;border-width:0 2px 2px 0;top:10px;left:16px;transform:rotate(45deg);height:15px;width:7px}.close{position:absolute;right:0;top:0;padding:12px 16px 12px 16px}.close:hover{background-color:#f44336;color:white}.header{background-color:#f38879;padding:30px 40px;color:black;text-align:center}.header:after{content:"";display:table;clear:both}input{margin:0;border:none;border-radius:0;width:75%;padding:10px;float:left;font-size:16px}.addBtn{padding:10px;width:25%;background:#d9d9d9;color:#555;float:left;text-align:center;font-size:16px;cursor:pointer;transition:0.3s;border-radius:0}.addBtn:hover{background-color:#bbb}a:link{color:#f38879;text-decoration:none}a:visited{color:blue}a:hover{color:blue}a:active{color:blue}
+    body{margin:5% auto;min-width:250px;max-width: 899px;background: #fff;box-shadow: 0px 5px 35px #aaa;}.my_content{padding: 5px 15px 15px 0;margin: 0;background: #fff}*{box-sizing:border-box}ol li{cursor:pointer;position:relative;padding:12px 8px 12px 40px;background:#eee;font-size:18px;transition:0.2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}ol li:nth-child(odd){background:#f9f9f9}ol li:hover{background:#ddd}ol li.checked{background:#888;color:#fff;text-decoration:line-through}ol li.checked::before{content:'';position:absolute;border-color:#fff;border-style:solid;border-width:0 2px 2px 0;top:10px;left:16px;transform:rotate(45deg);height:15px;width:7px}.close{position:absolute;right:0;top:0;padding:12px 16px 12px 16px}.close:hover{background-color:#f44336;color:white}.header{background-color:#f38879;padding:30px 40px;color:black;text-align:center}.header:after{content:"";display:table;clear:both}input{margin:0;border:none;border-radius:0;width:75%;padding:10px;float:left;font-size:16px}.addBtn{padding:10px;width:25%;background:#d9d9d9;color:#555;float:left;text-align:center;font-size:16px;cursor:pointer;transition:0.3s;border-radius:0}.addBtn:hover{background-color:#bbb}a:link{color:#f38879;text-decoration:none}a:visited{color:blue}a:hover{color:blue}a:active{color:blue}img.icon-copy {width: 16.5px; height: 19px}
 </style>
+
+<link rel="stylesheet" href="../css/jquery-core-style.css"/>
+<script src="../js/jquery-core-jquery-1.11.3.js">
+</script>
+<link rel='stylesheet' id='jquery-ui-css'  href='../css/jquery-core-jquery-ui.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sri-modal-css'  href='../css/jquery-core-sri-modal.css?ver=4.5.2' type='text/css' media='all' />
+<script type='text/javascript' src='../js/jquery-core-jquery-ui.min.js?ver=4.5.2'>
+</script>
+<script type='text/javascript' src='../js/jquery-core-clipboard-polyfill.js?ver=4.5.2'>
+</script>
+<script type='text/javascript' src='../js/jquery-core-sri-modal.js?ver=4.5.2'>
+</script>
 </head>
 <body>
 
@@ -16,36 +28,58 @@
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
     <div class="my_content">
+        <div id="sri-modal-template" title="Code Integration">
+	<div class="sri-modal-link">
+		<code>&lt;script
+			&nbsp;&nbsp;<span>src="{{link}}"</span>
+			&nbsp;&nbsp;<span>integrity="{{hash}}"</span>
+			&nbsp;&nbsp;<span>crossorigin="anonymous"&gt;&lt;/script&gt;</span>
+		</code>
+
+		<button class="sri-modal-copy-btn" title="Copy to clipboard!"
+			data-clipboard-text='&lt;script src="{{link}}" integrity="{{hash}}" crossorigin="anonymous"&gt;&lt;/script&gt;'>
+			<img class="icon-copy" src="../images/icon/icon-copy.png" />
+		</button>
+	</div>
+
+	<div class="sri-modal-info">
+		The <code>integrity</code> and <code>crossorigin</code> attributes are used for
+		<a href="https://www.w3.org/TR/SRI/" target="_blank">Subresource Integrity (SRI) checking</a>.
+		This allows browsers to ensure that resources hosted on third-party servers have
+		not been tampered with. Use of SRI is recommended as a best-practice, whenever
+		libraries are loaded from a third-party source. Read more at <a href="https://www.srihash.org/" target="_blank">srihash.org</a>
+	</div>
+</div>
 <ol id="myol">
 <p>UNSTABLE, NOT FOR PRODUCTION</p>
 	<li>
 		jQuery git build -
-		<a href="https://code.jquery.com/jquery-git.js">uncompressed</a>,
-		<a href="https://code.jquery.com/jquery-git.min.js">minified</a>,
-		<a href="https://code.jquery.com/jquery-git.slim.js">slim</a>,
-		<a href="https://code.jquery.com/jquery-git.slim.min.js">slim minified</a>
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-git.js">uncompressed</a>,
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-git.min.js">minified</a>,
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-git.slim.js">slim</a>,
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-git.slim.min.js">slim minified</a>
 	</li>
 	<li>
 		jQuery 3.x git build -
-		<a href="https://code.jquery.com/jquery-3.x-git.js">uncompressed</a>,
-		<a href="https://code.jquery.com/jquery-3.x-git.min.js">minified</a>,
-		<a href="https://code.jquery.com/jquery-3.x-git.slim.js">slim</a>,
-		<a href="https://code.jquery.com/jquery-3.x-git.slim.min.js">slim minified</a>
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-3.x-git.js">uncompressed</a>,
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-3.x-git.min.js">minified</a>,
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-3.x-git.slim.js">slim</a>,
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-3.x-git.slim.min.js">slim minified</a>
 	</li>
 	<li>
 		jQuery 2.x git build -
-		<a href="https://code.jquery.com/jquery-2.x-git.js">uncompressed</a>,
-		<a href="https://code.jquery.com/jquery-2.x-git.min.js">minified</a>
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-2.x-git.js">uncompressed</a>,
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-2.x-git.min.js">minified</a>
 	</li>
 	<li>
 		jQuery 1.x git build -
-		<a href="https://code.jquery.com/jquery-1.x-git.js">uncompressed</a>,
-		<a href="https://code.jquery.com/jquery-1.x-git.min.js">minified</a>
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-1.x-git.js">uncompressed</a>,
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-1.x-git.min.js">minified</a>
 	</li>
 	<li>
 		jQuery Migrate git build -
-		<a href="https://code.jquery.com/jquery-migrate-git.js">uncompressed</a>,
-		<a href="https://code.jquery.com/jquery-migrate-git.min.js">minified</a>
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-migrate-git.js">uncompressed</a>,
+		<a class='open-sri-modal' href="https://code.jquery.com/jquery-migrate-git.min.js">minified</a>
 	</li>
 <h2 id="jquery-all-3.x">jQuery Core - All 3.x Versions</h2>
 <li>jQuery Core 3.5.1 - <a class='open-sri-modal' href='https://code.jquery.com/jquery-3.5.1.js' data-hash='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc='>uncompressed</a>, <a class='open-sri-modal' href='https://code.jquery.com/jquery-3.5.1.min.js' data-hash='sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0='>minified</a>, <a class='open-sri-modal' href='https://code.jquery.com/jquery-3.5.1.slim.js' data-hash='sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM='>slim</a>, <a class='open-sri-modal' href='https://code.jquery.com/jquery-3.5.1.slim.min.js' data-hash='sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs='>slim minified</a></li>
@@ -149,7 +183,7 @@
 </div>
 <script>
 var myNodelist=document.getElementsByTagName("LI");var i;for(i=0;i<myNodelist.length;i++){var span=document.createElement("SPAN");var txt=document.createTextNode("\u00D7");span.className="close";span.appendChild(txt);myNodelist[i].appendChild(span)}var close=document.getElementsByClassName("close");var i;for(i=0;i<close.length;i++){close[i].onclick=function(){var a=this.parentElement;a.style.display="none"}}var list=document.querySelector("ol");list.addEventListener("click",function(a){if(a.target.tagName==="LI"){a.target.classList.toggle("checked")}},false);function newElement(){var c=document.createElement("li");var b=document.getElementById("myInput").value;var d=document.createTextNode(b);c.appendChild(d);if(b===""){alert("You must write something!")}else{document.getElementById("myol").appendChild(c)}document.getElementById("myInput").value="";var e=document.createElement("SPAN");var a=document.createTextNode("\u00D7");e.className="close";e.appendChild(a);c.appendChild(e);for(i=0;i<close.length;i++){close[i].onclick=function(){var f=this.parentElement;f.style.display="none"}}};
-</script>
+</script><!--
 <script type='text/javascript'>      
 //<![CDATA[       
 function changetargetlink(x){       
@@ -166,5 +200,6 @@ a[i].rel = "";
 changetargetlink('//ntplogs.blogspot.com/');       
 //]]>       
         </script>
+-->
 </body>
 </html>
