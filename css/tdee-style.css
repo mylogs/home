@@ -87,10 +87,10 @@ color: #fff;
 .calorie_calculator_general, .calorie_calculator_form{position:relative;font-size:1em;}
 .calorie_calculator_general .calcal_tab form input.empty-highlight{border:1px solid #ff0000;}
 .calorie_calculator_general .calcalpro_body_wrapper{padding:0 0.5em;}
-.calcalpro_body_wrapper{padding:0 0.5em;border:1px solid RGBA(77, 184, 166, 1.00);}
+.calcalpro_body_wrapper{padding:0 0.5em;border:1px solid #f38879;}
 .calorie_calculator_show_errors{position:absolute;width:100%;height:100%;display:flex;align-items:center;justify-content:center;transition:all 2s;-webkit-transition:all 2s;-moz-transition:all 2s;}
-.calcal_flash_message{background:RGBA(253, 215, 69, 1);color:#fff;padding:1em;border-radius:1.8em;border:1px solid RGBA(77, 184, 166, 1.00);z-index:9999;transition:all 2s;-webkit-transition:all 2s;-moz-transition:all 2s;}
-.calorie_calculator_general .tab_header_container{display:flex;display:-webkit-flex;display:-moz-flex;flex-wrap:wrap;margin:0 !important;padding:0 !important;border:1px solid RGBA(77, 184, 166, 1.00);position:relative;border-bottom:none;}
+.calcal_flash_message{background:RGBA(253, 215, 69, 1);color:#fff;padding:1em;border-radius:1.8em;border:1px solid #f38879;z-index:9999;transition:all 2s;-webkit-transition:all 2s;-moz-transition:all 2s;}
+.calorie_calculator_general .tab_header_container{display:flex;display:-webkit-flex;display:-moz-flex;flex-wrap:wrap;margin:0 !important;padding:0 !important;border:1px solid #f38879;position:relative;border-bottom:none;}
 .switch-left-to-right{background:RGBA(72, 185, 166, 1.00);width:50%;position:absolute;left:0;height:50px;-webkit-transition:left 0.25s ease-out;-moz-transition:left 0.25s ease-out;-ms-transition:left 0.25s ease-out;-o-transition:left 0.25s ease-out;transition:left 0.25s ease-out;}
 .switch-left-to-right.right{left:50%;-webkit-transition:left 0.25s ease-out;-moz-transition:left 0.25s ease-out;-ms-transition:left 0.25s ease-out;-o-transition:left 0.25s ease-out;transition:left 0.25s ease-out;}
 .calorie_calculator_general ul.tab_header_container li{flex:1;background:transparent;list-style:none;text-decoration:none;text-align:center;border:none;padding:0;margin:0;transition:background-color 1s ease-out;-webkit-transition:background-color 1s ease-out;-moz-transition:background-color 1s ease-out;}
@@ -101,7 +101,7 @@ color: #fff;
 .calorie_calculator_general .calcal_tab_open{display:block !important;}
 .calorie_calculator_general .calcal_tab form input, 
 .calorie_calculator_general .calcal_tab form select,
-.calorie_calculator_general .send_or_download input{min-height:50px !important;width:100% !important;max-width:100% !important;border-radius:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid RGBA(77, 184, 166, 1.00);padding:0.5em;background:#fff;margin-right:0 !important;margin-left:0 !important;margin-top:0 !important;transition:all 2s;-webkit-transition:all 2s;-moz-transition:all 2s;text-shadow:none;box-shadow:none;box-sizing:border-box;font-size:1em;color:#333;}
+.calorie_calculator_general .send_or_download input{min-height:50px !important;width:100% !important;max-width:100% !important;border-radius:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #f38879;padding:0.5em;background:#fff;margin-right:0 !important;margin-left:0 !important;margin-top:0 !important;transition:all 2s;-webkit-transition:all 2s;-moz-transition:all 2s;text-shadow:none;box-shadow:none;box-sizing:border-box;font-size:1em;color:#333;}
 .calorie_calculator_general .calcal_tab form input:active, .calorie_calculator_general .calcal_tab form select:active,
 .calorie_calculator_general .calcal_tab form input:focus, .calorie_calculator_general .calcal_tab form select:focus{border:1px solid RGBA(252, 214, 83, 1.00);box-shadow:none;}
 .calorie_calculator_general .calcal_tab form .full_width, .calorie_calculator_general .calcal_tab form .full_width{width:100% !important;display:flex;display:-webkit-flex;display:-moz-flex;height:50px;align-items:center;}
@@ -120,9 +120,9 @@ color: #fff;
 .calorie_calculator_general .calcal_tab form input[type="radio"]:checked + label,
 .calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label{position:relative;padding-left:28px;cursor:pointer;line-height:20px;display:inline-block;color:#666;}
 .calorie_calculator_general .calcal_tab form input[type="radio"]:checked + label:before,
-.calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:before{content:'';position:absolute;left:0;top:0;width:22px;height:22px;border:1px solid RGBA(77, 184, 166, 1.00);border-radius:100%;background:#fff;}
+.calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:before{content:'';position:absolute;left:0;top:0;width:22px;height:22px;border:1px solid #f38879;border-radius:100%;background:#fff;}
 .calorie_calculator_general .calcal_tab form input[type="radio"]:checked + label:after,
-.calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:after{content:'';width:16px;height:16px;background:RGBA(77, 184, 166, 1.00);position:absolute;top:3;left:3px;border-radius:100%;-webkit-transition:all 0.2s ease;transition:all 0.2s ease;}
+.calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:after{content:'';width:16px;height:16px;background:#f38879;position:absolute;top:3;left:3px;border-radius:100%;-webkit-transition:all 0.2s ease;transition:all 0.2s ease;}
 .calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:after{opacity:0;-webkit-transform:scale(0);transform:scale(0);}
 .calorie_calculator_general .calcal_tab form input[type="radio"]:checked + label:after{opacity:1;-webkit-transform:scale(1);transform:scale(1);}
 .calorie_calculator_general .calcal_tab form input[type="radio"]:checked,
@@ -130,36 +130,36 @@ color: #fff;
 .calorie_calculator_general .calcal_tab form input[type="radio"]:checked + label,
 .calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label{position:relative;padding-left:28px;cursor:pointer;line-height:20px;display:inline-block;color:#000;margin:0;margin-right:1em;}
 .calorie_calculator_general .calcal_tab form input[type="radio"]:checked + label:before,
-.calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:before{content:'';position:absolute;left:0;top:0;width:22px;height:22px;border:1px solid 1px solid RGBA(77, 184, 166, 1.00);border-radius:100%;background:#fff;}
+.calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:before{content:'';position:absolute;left:0;top:0;width:22px;height:22px;border:1px solid 1px solid #f38879;border-radius:100%;background:#fff;}
 .calorie_calculator_general .calcal_tab form input[type="radio"]:checked + label:after,
-.calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:after{content:'';width:16px;height:16px;background:RGBA(77, 184, 166, 1.00);position:absolute;top:3px;left:3px;border-radius:100%;-webkit-transition:all 0.2s ease;transition:all 0.2s ease;}
+.calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:after{content:'';width:16px;height:16px;background:#f38879;position:absolute;top:3px;left:3px;border-radius:100%;-webkit-transition:all 0.2s ease;transition:all 0.2s ease;}
 .calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:after, 
 .calorie_calculator_general .calcal_tab form input[type="radio"]:not(:checked) + label:after{opacity:0;-webkit-transform:scale(0);transform:scale(0);}
 .calorie_calculator_general .calcal_tab form input[type="radio"]:checked + label:after,
 .calorie_calculator_general .calcal_tab form input[type="radio"]:checked + label:after{opacity:1;-webkit-transform:scale(1);transform:scale(1);}
-.calorie_calculator_general .gender_field_wrapper{border:1px solid RGBA(77, 184, 166, 1.00);padding:0 0.5em;}
+.calorie_calculator_general .gender_field_wrapper{border:1px solid #f38879;padding:0 0.5em;}
 .calorie_calculator_general .center{position:absolute;display:inline-block;top:50%;left:50%;transform:translate(-50%, -50%);}
 .calorie_calculator_general .calcalpro-custom-select-wrapper{position:relative;display:inline-block;user-select:none;width:100%;}
 .calorie_calculator_general .calcalpro-custom-select-wrapper select{display:none;}
 .calorie_calculator_general .calcalpro-custom-select{position:relative;display:flex;display:-webkit-flex;display:-moz-flex;width:100%;}
-.calorie_calculator_general .calcalpro-custom-select-trigger{position:relative;display:block;width:100%;padding:0 0.5em;color:#333;border-radius:0px;cursor:pointer;border:1px solid RGBA(77, 184, 166, 1.00);display:flex;display:-webkit-flex;display:-moz-flex;align-items:center;height:50px;overflow:hidden;}
-.calorie_calculator_general .calcalpro-custom-select-trigger:after{position:absolute;display:block;content:'';width:12px;height:12px;top:50%;right:25px;margin-top:-3px;border-bottom:1px solid RGBA(77, 184, 166, 1.00);border-right:1px solid RGBA(77, 184, 166, 1.00);transform:rotate(45deg) translateY(-50%);transition:all .4s ease-in-out;transform-origin:50% 0;}
+.calorie_calculator_general .calcalpro-custom-select-trigger{position:relative;display:block;width:100%;padding:0 0.5em;color:#333;border-radius:0px;cursor:pointer;border:1px solid #f38879;display:flex;display:-webkit-flex;display:-moz-flex;align-items:center;height:50px;overflow:hidden;}
+.calorie_calculator_general .calcalpro-custom-select-trigger:after{position:absolute;display:block;content:'';width:12px;height:12px;top:50%;right:25px;margin-top:-3px;border-bottom:1px solid #f38879;border-right:1px solid #f38879;transform:rotate(45deg) translateY(-50%);transition:all .4s ease-in-out;transform-origin:50% 0;}
 .calorie_calculator_general .calcalpro-custom-select.opened .calcalpro-custom-select-trigger:after{margin-top:3px;transform:rotate(-135deg) translateY(-50%);}
-.calorie_calculator_general .calcalpro-custom-options{position:absolute;display:block;top:100%;left:0;right:0;min-width:100%;margin:15px 0;border:1px solid RGBA(77, 184, 166, 1.00);border-radius:4px;box-sizing:border-box;box-shadow:0 2px 1px rgba(0,0,0,.07);background:#fff;transition:all .4s ease-in-out;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-15px);}
+.calorie_calculator_general .calcalpro-custom-options{position:absolute;display:block;top:100%;left:0;right:0;min-width:100%;margin:15px 0;border:1px solid #f38879;border-radius:4px;box-sizing:border-box;box-shadow:0 2px 1px rgba(0,0,0,.07);background:#fff;transition:all .4s ease-in-out;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-15px);}
 .calorie_calculator_general .calcalpro-custom-select.opened .calcalpro-custom-options{opacity:1;visibility:visible;pointer-events:all;transform:translateY(0);z-index:9999;}
-.calorie_calculator_general .calcalpro-custom-options:before{position:absolute;display:block;content:'';bottom:100%;right:25px;width:7px;height:7px;margin-bottom:-4px;border-top:1px solid RGBA(77, 184, 166, 1.00);border-left:1px solid RGBA(77, 184, 166, 1.00);background:#fff;transform:rotate(45deg);transition:all .4s ease-in-out;}
+.calorie_calculator_general .calcalpro-custom-options:before{position:absolute;display:block;content:'';bottom:100%;right:25px;width:7px;height:7px;margin-bottom:-4px;border-top:1px solid #f38879;border-left:1px solid #f38879;background:#fff;transform:rotate(45deg);transition:all .4s ease-in-out;}
 .calorie_calculator_general .option-hover:before{background:#f9f9f9;}
-.calorie_calculator_general .calcalpro-custom-option{position:relative;display:flex;align-items:center;padding:0 0.5em;border-bottom:1px solid RGBA(77, 184, 166, 1.00);font-size:1em;color:#333;min-height:50px;cursor:pointer;transition:all .4s ease-in-out;}
+.calorie_calculator_general .calcalpro-custom-option{position:relative;display:flex;align-items:center;padding:0 0.5em;border-bottom:1px solid #f38879;font-size:1em;color:#333;min-height:50px;cursor:pointer;transition:all .4s ease-in-out;}
 .calorie_calculator_general .calcalpro-custom-option:first-of-type{border-radius:4px 4px 0 0;}
 .calorie_calculator_general .calcalpro-custom-option:last-of-type{border-bottom:0;border-radius:0 0 4px 4px;}
 .calorie_calculator_general .calcalpro-custom-option:hover,
 .calorie_calculator_general .calcalpro-custom-option.selection{background:RGBA(255,255,0,0.5);}
-.calorie_calculator_general .calorie_calculator_result{border:1px solid RGBA(77, 184, 166, 1.00);margin-bottom:0.5em;}
-.calorie_calculator_general .calorie_calculator_single_result{padding:0.6em 0.5em;font-size:1em;border-bottom:1px solid RGBA(77, 184, 166, 1.00);margin-bottom:0;margin-top:0;}
-.calorie_calculator_general .calorie_calculator_single_result span{font-size:1.2em;margin-right:0.2em;color:RGBA(77, 184, 166, 1.00);}
-.calorie_calculator_general .send_or_download input[type="button"]{width:100%;height:50px;color:#fff;border-radius:0;text-shadow:none;box-shadow:none;background:RGBA(77, 184, 166, 1.00);font-size:1em;margin-top:0;}
+.calorie_calculator_general .calorie_calculator_result{border:1px solid #f38879;margin-bottom:0.5em;}
+.calorie_calculator_general .calorie_calculator_single_result{padding:0.6em 0.5em;font-size:1em;border-bottom:1px solid #f38879;margin-bottom:0;margin-top:0;}
+.calorie_calculator_general .calorie_calculator_single_result span{font-size:1.2em;margin-right:0.2em;color:#f38879;}
+.calorie_calculator_general .send_or_download input[type="button"]{width:100%;height:50px;color:#fff;border-radius:0;text-shadow:none;box-shadow:none;background:#f38879;font-size:1em;margin-top:0;}
 .calorie_calculator_general .send_or_download{padding:0;}
-.calorie_calculator_general .send_or_download input[type="button"]{width:100%;background:RGBA(77, 184, 166, 1.00);}
+.calorie_calculator_general .send_or_download input[type="button"]{width:100%;background:#f38879;}
 .calorie_calculator_general .send_or_download input.send_to_email_submit,
 .calorie_calculator_general .send_or_download input.download_as_pdf_submit{background:RGBA(253, 215, 69, 0.7);color:#333;}
 .calorie_calculator_general input.send_to_email_input, .calorie_calculator_general input.calorie_verify_captcha, 
@@ -182,14 +182,14 @@ color: #fff;
 .calcalpro_wrapper .license_key_validity_area_inner{padding:2em;text-align:center;}
 .calcalpro_wrapper .license_key_validity_area_inner h1{margin:0;padding:0;text-align:center;color:#fff;}
 .calcalpro_wrapper .license_key_validity_area_inner a{color:yellow;}
-.calcalpro_wrapper .license_key_validity_area_inner a:hover{color:RGBA(77, 184, 166, 1.00);}
+.calcalpro_wrapper .license_key_validity_area_inner a:hover{color:#f38879;}
 .calcalpro_captcha{display:flex;display:-webkit-flex;display:-moz-flex;align-items:center;justify-content:center;flex-direction:column;}
-.calorie_calculator_chart.calorie_calculator_chart_general .fg-toolbar.ui-toolbar.ui-widget-header{background:RGBA(77, 184, 166, 1.00);border-radius:0;box-shadow:none;text-shadow:none;border:none;display:flex;display:-webkit-flex;display:-moz-flex;align-items:center;padding:2px;}
+.calorie_calculator_chart.calorie_calculator_chart_general .fg-toolbar.ui-toolbar.ui-widget-header{background:#f38879;border-radius:0;box-shadow:none;text-shadow:none;border:none;display:flex;display:-webkit-flex;display:-moz-flex;align-items:center;padding:2px;}
 .calorie_calculator_chart.calorie_calculator_chart_general .fg-toolbar.ui-toolbar.ui-widget-header > div{flex:1;}
-.calorie_calculator_chart.calorie_calculator_chart_general .dataTables_wrapper input[type="search"]{width:100%;height:50px;padding:0.5em;margin:0;border-radius:0;border:1px solid RGBA(77, 184, 166, 1.00);box-shadow:none;}
+.calorie_calculator_chart.calorie_calculator_chart_general .dataTables_wrapper input[type="search"]{width:100%;height:50px;padding:0.5em;margin:0;border-radius:0;border:1px solid #f38879;box-shadow:none;}
 .calorie_calculator_chart.calorie_calculator_chart_general .fg-toolbar.ui-toolbar.ui-widget-header label{margin:0;width:100%;}
-.calorie_calculator_chart.calorie_calculator_chart_general .fg-toolbar.ui-toolbar.ui-widget-header label select{border:none;border-radius:0;width:100%;margin:0;height:50px;background:#fff;appearance:none;-webkit-appearance:none;-moz-appearance:none;padding:0.5em;border:1px solid RGBA(77, 184, 166, 1.00);}
-.calorie_calculator_chart.calorie_calculator_chart_general table{border:2px solid RGBA(77, 184, 166, 1.00);border-top:0;}
+.calorie_calculator_chart.calorie_calculator_chart_general .fg-toolbar.ui-toolbar.ui-widget-header label select{border:none;border-radius:0;width:100%;margin:0;height:50px;background:#fff;appearance:none;-webkit-appearance:none;-moz-appearance:none;padding:0.5em;border:1px solid #f38879;}
+.calorie_calculator_chart.calorie_calculator_chart_general table{border:2px solid #f38879;border-top:0;}
 .calorie_calculator_chart.calorie_calculator_chart_general .dataTables_paginate{margin:0;display:flex;display:-webkit-flex;display:-moz-flex;padding:0;width:100%;align-items:center;justify-content:center;padding-bottom:2px;}
 .calorie_calculator_chart.calorie_calculator_chart_general .dataTables_info{display:none;}
 .calorie_calculator_chart.calorie_calculator_chart_general .dataTables_wrapper .dataTables_paginate .fg-button{text-decoration:none;border-bottom:none;box-shadow:none;text-shadow:none;border-radius:0;background:RGBA(255, 254, 155, 1.00);color:#333;border:1px solid RGBA(252, 214, 83, 1.00);}

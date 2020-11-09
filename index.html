@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MY NOTES</title>
-<link type="text/css" rel="stylesheet" href="./css/mylogs-style.css" />
-</head>
-<body>
-
-<div id="myDIV" class="header">
-  <h1 style="margin:5px">MY NOTE</h1>
-  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-</div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY NOTES
+    </title>
+    <link type="text/css" rel="stylesheet" href="./css/mylogs-style.css" />
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+      <h1 style="margin:5px">MY NOTE
+      </h1>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+      <nav>
+        <span class="icon_bar" onclick="openNav()">&#9776;
+        </span>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+          </a>
+          <a href="./index.html">Trang chủ
+          </a>
+          <a href="#">Services
+          </a>
+          <a href="#">Clients
+          </a>
+          <a href="#">Contact
+          </a>
+        </div>
+      </nav>
+    </div>
     <div class="my_content">
-<ol id="myol">
-    <li>
-    <a href="./post/hon-100-meo-huu-ich.html">Hơn 100 mẹo hữu ích</a>
-    </li>
-	<li>
-        <a href="./post/jquery-core-all-versions.html">jQuery Core - All Versions</a>
-	</li>
-    <li>
-        <a href="./demo-form/cong-cu-tinh-tdee.html">Công cụ tính TDEE</a>
-	</li>
-    <li>
-        <a href="./js/iframe-demo-script-hd.js">JS iFrame dùng demo (&lt;/head&gt;)</a>
-    </li>
-    <li>
-        <a href="./js/iframe-demo-script-bd.js">JS iFrame dùng demo (&lt;/body&gt;)</a>
-    </li>
-    <!--
-    <li>
-    <a href="123123">123123</a>
-    </li>
+      <ol id="myol">
+        <li>
+          <a href="./post/hon-100-meo-huu-ich.html">Hơn 100 mẹo hữu ích
+          </a>
+        </li>
+        <li>
+          <a href="./post/jquery-core-all-versions.html">jQuery Core - All Versions
+          </a>
+        </li>
+        <li>
+          <a href="./demo-form/cong-cu-tinh-tdee.html">Công cụ tính TDEE
+          </a>
+        </li>
+        <li>
+          <a href="./js/iframe-demo-script-hd.js">JS iFrame dùng demo (&lt;/head&gt;)
+          </a>
+        </li>
+        <li>
+          <a href="./js/iframe-demo-script-bd.js">JS iFrame dùng demo (&lt;/body&gt;)
+          </a>
+        </li>
+        <!--
+<li>
+<a href="123123">123123</a>
+</li>
 -->
-</ol>
-</div>
-<script async="async" type="text/javascript" src="./js/mylogs-myNodelist.js"></script>
+      </ol>
+    </div>
+    <script async="async" type="text/javascript" src="./js/mylogs-myNodelist.js">
+    </script>
     <script>
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
@@ -54,7 +77,8 @@ function myFunction() {
         }
     }
 }
-</script>
+    </script>
+    <!--
 <script type='text/javascript'>      
 //<![CDATA[       
 function changetargetlink(x){       
@@ -70,6 +94,7 @@ a[i].rel = "";
 }}}}       
 changetargetlink('//ntplogs.blogspot.com/');       
 //]]>       
-        </script>
-</body>
+</script>
+-->
+  </body>
 </html>
