@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='../images/ico/mr_phuong-100x100.png' rel='icon' type='image/x-icon'/>
+    <link href='../images/ico/mr_phuong-192x192.png' rel='icon' sizes='192x192'/>
+    <link href='../images/ico/mr_phuong-192x192.png' rel='apple-touch-icon'/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/mylogs-style.css" />
+    <link type="text/css" rel="stylesheet" href="../css/fontello.css" />
+    <script src="../js/jquery-core-jquery-1.11.3.js">
+    </script>
+    <script src="../js/bootstrap.min.js">
+    </script>
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+    <a class="fontello_ico" href="../index.html"><i class="icon-home"></i></a>
+      <h1 style="margin:5px">Gym
+      </h1>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+      <nav>
+        <span class="icon_bar" onclick="openNav()">&#9776;
+        </span>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+          </a>
+          <a href="../index.html">Trang chủ
+          </a>
+          <a href="#">Services
+          </a>
+          <a href="#">Clients
+          </a>
+          <a href="#">Contact
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="my_content">
+      <!-- lis -->
+      <ol id="myol">
+        <li data-toggle="modal" data-target="#videoModal" data-video="../videos/boygym/tap-bung-tu-con-so-0.mp4"><span>Tập bụng từ con số 0</span>
+        </li>
+        <li data-toggle="modal" data-target="#videoModal" data-video="../videos/boygym/huong-dan-hit-dat-dung-cach-va-toi-uu.mp4"><span>Hít đất tối ưu</span>
+        </li>
+        <li data-toggle="modal" data-target="#videoModal" data-video="../videos/boygym/ll-huong-dan-giat-nguc-du-chua-co-nguc.mp4"><span>Bài 2-Hướng dẫn giật ngực (dù chưa có ngực)</span>
+        </li>
+        <li data-toggle="modal" data-target="#videoModal" data-video="../videos/boygym/lll-chia-bai-hit-dat-cho-moi-doi-tuong.mp4"><span>Bài 3-Chia bài hít đất cho mọi đối tượng</span>
+        </li>
+        <li data-toggle="modal" data-target="#videoModal" data-video="../videos/boygym/cach-co-1-co-bung-6-mui-ma-ban-co-the-tu-hao.mp4"><span>Cách Có 1 cơ bụng 6 múi mà bạn có thể tự hào</span>
+        </li>
+        </ol>
+      <!-- Modal -->
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark border-dark">
+              <button class="close text-white" data-dismiss="modal">&times;
+              </button>
+            </div>
+            <div class="modal-body bg-dark p-0">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><script async="async" type="text/javascript" src="../js/mylogs-myNodelist.js">
+      <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myol");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("span")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+    </script>
+    <script>
+$(document).ready(function() {
+    // Set iframe attributes when the show instance method is called
+    $("#videoModal").on("show.bs.modal", function(event) {
+        let li = $(event.relatedTarget); // li that triggered the modal
+        let url = li.data("video");      // Extract url from data-video attribute
+        $(this).find("iframe").attr({
+            src : url,
+            allow : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        });
+    });
+    // Remove iframe attributes when the modal has finished being hidden from the user
+    $("#videoModal").on("hidden.bs.modal", function() {
+        $("#videoModal iframe").removeAttr("src allow");
+    });
+});
+    </script>
+      
+  </body>
+</html>
